@@ -1,6 +1,6 @@
 <?php include('header.php') ?>
 
-<section class="lg:relative bg-[#082366] text-center lg:pt-32 ">
+<section id="introduction" class="lg:relative bg-[#082366] text-center lg:pt-32 ">
     <div class="lg:h-80 px-4 lg:w-[90%] w-[95%] m-auto lg:pt-0 pt-20 pb-5">
         <h2 class="uppercase text-5xl font-extrabold text-white pb-4">Introducing website and app Development services</h2>
         <h5 class="text-3xl text-white">Specialize in the e-commerce jewelery business.</h5>
@@ -29,7 +29,7 @@
     </div>
 </div>
 <div class="w-full">
-    <div class="drop-shadow-2xl border bg-no-repeat bg-[url('img/developer.png')] bg-contain bg-cover w-full">
+    <div id="services" class="drop-shadow-2xl border bg-no-repeat bg-[url('img/developer.png')] bg-contain bg-cover w-full">
 
         <h3 class="flex  items-center place-content-center lg:pt-40 lg:mt-0 mt-5 text-white text-4xl text-center uppercase font-semibold">
             <span class="mr-3"><img src="img/feature.png" alt="" class="w-12 h-12"></span>
@@ -87,12 +87,26 @@
         </div>
     </div>
 </div>
-<div class="bg-[#082366]">
+<div id="contact_us" class="bg-gray-100">
+<h3 class="flex  items-center place-content-center py-5 text-black text-4xl text-center uppercase font-semibold">
+            <span class="mr-3"><img src="img/contact-us.png" alt="" class="w-12 h-12"></span>
+            Contact Us
+        </h3>
+    <div class="grid lg:grid-cols-2 gap-5 bg-gray-100 place-content-center">
+        <div class="place-self-center">
+            <img src="img/JavaScript-Contact-Form-04-520x270.png" alt="" class="w-full h-full">
+        </div>
+        <div class="">
+            <?php require_once('contact.php') ?>
+        </div>
+    </div>
+</div>
+<div id="theme" class="bg-[#082366]">
     <div class="grid lg:grid-cols-2 gap-x-5 w-[95%] mx-auto text-white py-10 px-4">
         <div class="grid content-center">
             <h3 class="text-5xl font-extrabold ">Responsive And Seo Friendly Website Development</h3>
             <p class="pt-3 pb-5">Our website development services are designed to be responsive, meaning that the site will automatically adjust and adapt to any device it is viewed on - from mobile phones to tablets</p>
-            <a href=""><button class="text-black bg-white px-4 py-2 rounded-full border-2 border-gray-400"  style="box-shadow: -8px 9px 32px -7px rgba(0,0,0,0.75);
+            <a href=""><button class="text-black bg-white px-4 py-2 rounded-full border-2 border-gray-400" style="box-shadow: -8px 9px 32px -7px rgba(0,0,0,0.75);
             -webkit-box-shadow: -8px 9px 32px -7px rgba(0,0,0,0.75);
             -moz-box-shadow: -8px 9px 32px -7px rgba(0,0,0,0.75);"><span>Call Us -</span>9930425384</button></a>
         </div>
@@ -102,30 +116,28 @@
     </div>
 </div>
 <div>
-<div class="grid lg:grid-cols-5 gap-x-2 p-2 my-10 text-black text-center uppercase">
-            <div class=" p-2 ">
-                <span class=""><img src="img/domain.png" alt="" class="w-36 h-36 border border-black p-2 m-auto"></span>
-                <p class="text-lg font-extrabold mt-5" >domain and hosting</p>
-            </div>
-            <div class=" p-2">
-                <span><img src="img/online-shop.png" alt="" class="w-36 h-36 border border-black p-2 m-auto"></span>
-                <p class="text-lg font-extrabold mt-5">e-commerce</p>
-            </div>
-            <div class=" p-2"> 
-                <span><img src="img/development.png" alt="" class="w-36 h-36 border border-black p-2 m-auto"></span>
-                <p class="text-lg font-extrabold mt-5">web maintaince</p>
-            </div>
-            <div class=" p-2">
-                <span><img src="img/content-management.png" alt="" class="w-36 h-36 border border-black p-2 m-auto"></span>
-                <p class="text-lg font-extrabold mt-5">content management</p>
-            </div>
-            <div class=" p-2">
-                <span><img src="img/like.png" alt="" class="w-36 h-36 border border-black p-2 m-auto"></span>
-                <p class="text-lg font-extrabold mt-5">User friendly</p>
-            </div>
-        </div>  
+    <div class="grid lg:grid-cols-5 gap-x-2 p-2 my-10 text-black text-center uppercase">
+        <div class=" p-2 ">
+            <span class=""><img src="img/domain.png" alt="" class="w-36 h-36 border border-black p-2 m-auto"></span>
+            <p class="text-lg font-extrabold mt-5">domain and hosting</p>
+        </div>
+        <div class=" p-2">
+            <span><img src="img/online-shop.png" alt="" class="w-36 h-36 border border-black p-2 m-auto"></span>
+            <p class="text-lg font-extrabold mt-5">e-commerce</p>
+        </div>
+        <div class=" p-2">
+            <span><img src="img/development.png" alt="" class="w-36 h-36 border border-black p-2 m-auto"></span>
+            <p class="text-lg font-extrabold mt-5">web maintaince</p>
+        </div>
+        <div class=" p-2">
+            <span><img src="img/content-management.png" alt="" class="w-36 h-36 border border-black p-2 m-auto"></span>
+            <p class="text-lg font-extrabold mt-5">content management</p>
+        </div>
+        <div class=" p-2">
+            <span><img src="img/like.png" alt="" class="w-36 h-36 border border-black p-2 m-auto"></span>
+            <p class="text-lg font-extrabold mt-5">User friendly</p>
+        </div>
+    </div>
 </div>
-<div class="fixed top-32 left-0 z-50">
-    <?php include_once('contact.php') ?>
-</div>
+
 <?php include('footer.php') ?>

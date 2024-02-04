@@ -10,7 +10,7 @@ $image='https://www.oriflammeitsolutions.com/img/contact%20us%20(1).png';
 $Description3='Are you willing to enhance your business with the help of IT Infrastructure? Do you have any inquiries about IT Services? Do Contact us.';
 $Title3='Contact Us - Get the hassle-free IT solutions - Oriflamme';
 $alternateName='Contact Us - Get the hassle-free IT solutions - Oriflamme';
-include("header.php") ?>
+ ?>
 
 <?php
 
@@ -110,7 +110,7 @@ include("header.php") ?>
    <!-- ...................CONTACT US ...................... -->
    
 <!--............CONTACT US...................... -->
-    <div class="">
+    <div class="absolute lg:top-32 top-14 fixed  right-5 w-96 ">
   <?php
         if ($ctr==0 & $insert == true) {
             echo "<p id='msg' class='submitMsg py-4 text-center bg-green-300'>Massage submitted succesfully.Thank You</p>";
@@ -122,15 +122,15 @@ include("header.php") ?>
 
      <!-- ..............................contactus.................... -->
     <div class="grid justify-items-end">
-            <div class="w-80 m-5 p-5 bg-gray-100">
+            <div class="m-5 p-5 bg-gray-100">
                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">       
                 <div class="lg:grid lg:grid-cols-2 gap-5">
                 <div class="w-full" >
-                      <label for="" class="text-sm">Your Name<span class="text-red-600 ">*</span><span class="text-red-600 text-sm error"><?php echo "\n".$nameErr; ?></span></label>
-                    <input type="text" name="name" id="" placeholder="Your name here" class="w-full my-1 text-xs py-2 px-2 border-2 border-sky-950  dark:bg-gray-700 dark:border-sky-950dark:placeholder-gray-400 dark:text-white focus:outline-none focus:ring-2 focus:ring-sky-950focus:border-transparent">
+                      <label for="" class="text-sm">Your Name<span class="text-red-600 ">*</span><span class="text-red-600 text-xs error"><?php echo "<br>"."\n".$nameErr; ?></span></label>
+                    <input type="text" name="name" id="" placeholder="Your name here" class="w-full my-1 text-xs py-2 px-2 border-2 border-sky-950  dark:bg-gray-700 dark:border-sky-950 dark:placeholder-gray-400 dark:text-white focus:outline-none focus:ring-2 focus:ring-sky-950focus:border-transparent">
                 </div>
                 <div>
-                    <label for="" class="text-sm">Your Email<span class="text-red-600 error">*</span><span class="text-red-600 text-sm error"><?php echo "\n".$emailErr; ?></span></label>
+                    <label for="" class="text-sm">Your Email<span class="text-red-600 error">*</span><span class="text-red-600 text-xs error"><?php echo "<br>"."\n".$emailErr; ?></span></label>
                     <input type="email" name="email" id="" placeholder="Your email here" class="w-full my-1 text-xs py-2 px-2 border-2 border-sky-950   dark:bg-gray-700 dark:border-sky-950 dark:placeholder-gray-400 dark:text-white focus:outline-none focus:ring-2 focus:ring-sky-950 focus:border-transparent" >
                 </div>
                 <div>
@@ -139,7 +139,7 @@ include("header.php") ?>
                 </div>
                
                 <div>
-                    <label for="" class="text-sm">Contact Number<span class="text-red-600 error">*</span><span class="text-red-600 text-sm error"> <?php echo "\n".$mobilenoErr; ?></span></label>
+                    <label for="" class="text-sm">Contact Number<span class="text-red-600 error">*</span><span class="text-red-600 text-xs error"> <?php echo "<br>"."\n".$mobilenoErr; ?></span></label>
                     <input type="number" name="contact" id="" placeholder="Your phone number here" class="w-full my-1 text-xs py-2 px-2 border-2 border-sky-950   dark:bg-gray-700 dark:border-sky-950 dark:placeholder-gray-400 dark:text-white focus:outline-none focus:ring-2 focus:ring-sky-950 focus:border-transparent">
                 </div>
             </div>

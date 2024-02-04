@@ -51,6 +51,10 @@
 
    
     <style>
+           html {
+  scroll-behavior: smooth;
+}
+
         *{
             margin: 0;
             padding: 0;
@@ -209,10 +213,10 @@
         }
          /* ...........blog-btn................ */
 
-         .active2{
+         /* .active{ */
             /* background-color: #fbf9f9; */
-            color:red;
-         }
+            /* color:red;
+         } */
           
           /*.......................*/
           .containerer {
@@ -254,62 +258,30 @@
     <div id="navbar" class="nav-color fixed w-full top-0 bg-[#082366] z-50">
     <nav class="relative flex text-gray-300 justify-between items-center py-1 " >
         <div class="hidden lg:block">
-            <a href="index"><img src="img/jewelwebnet-logo.png" alt="" width="350px"></a>
+            <a href="./"><img src="img/jewelwebnet-logo.png" alt="" width="350px"></a>
         </div>
         <div class="block lg:hidden">
-            <a href="index"><img src="img/jewelwebnet-logo.png" alt="" width="150px"></a>
+            <a href="./"><img src="img/jewelwebnet-logo.png" alt="" width="150px"></a>
         </div>
         <div id="nav-menu">
-            <ul class="nav flex text-lg menu-item font-base text-white">
-           <li class="menu relative "><a href="aboutus" class="py-4 mx-4 <?php echo(basename($_SERVER['PHP_SELF'])=="aboutus.php"?"active2":"")?>">About Us</a></li>
+            <ul id="myDIV" class="nav flex text-lg menu-item font-base text-white">
+           <li class="btn menu "><a href="#introduction"  class=" active py-4 mx-4">About Us</a></li>
          
-           <li class="menu relative lg:block hidden "><a href="services" class="py-4 mx-4 <?php echo(basename($_SERVER['PHP_SELF'])=="services.php"?"active2":"")?>">Services</a>
-                <div class="hidden absolute submenu  top-10 left-0 w-96 ">
-                    <ul class="bg-[#082366]  py-3">
-                       
-                            <li class="mb-2"><a href="ecommerce"  class="pb-2   mx-4 <?php echo(basename($_SERVER['PHP_SELF'])=="ecommerce.php"?"active2":"")?>">Ecommerce Website Development</a></li>
-                            <li class="mb-2"><a href="businesswebsite"  class="pb-2  mx-4 <?php echo(basename($_SERVER['PHP_SELF'])=="businesswebsite.php"?"active2":"")?>">Business Website</a></li>
-                            <li class="mb-2"><a href="websitemaintance"  class="pb-2  mx-4 <?php echo(basename($_SERVER['PHP_SELF'])=="websitemaintance.php"?"active2":"")?>">Website Maintenance</a></li>
-                            <li class="mb-2"><a href="coding_and_technology"  class="pb-2  mx-4 <?php echo(basename($_SERVER['PHP_SELF'])=="coding_and_technology.php"?"active2":"")?>">Coding & Technology</a></li>
-                    </ul>
-                </div>
+           <li class="btn menu lg:block hidden "><a href="#services" class=" py-4 mx-4">Services</a>
+                
            </li>
-                <li class="menu  lg:hidden block">
-                        <div class="flex justify-between justify-items-center w-full  relative  ">
-                            <div><a href="services" class="py-4 mx-4 <?php echo basename($_SERVER['PHP_SELF']) == 'services.php' ? 'active2' : ''; ?>">Services</a></div>
-                            <div class="">
-                                <span class="p-2 mobmenu"> <i class="recent fas fa-plus"></i></span>
-                            </div>
-                            <div class="absolute  togmenu top-8 left-0  w-full hidden border bg-[#082366] z-50">
-                                <ul>
-                                    <li class="menu relative text-right">
-                                        <a href="ecommerce"  class="pb-2  mx-4 <?php echo(basename($_SERVER['PHP_SELF'])=="ecommerce.php"?"active2":"")?>">Ecommerce Website Development</a>
-                                    </li>
-                                    <li class="menu relative text-right">
-                                        <a href="businesswebsite"  class="pb-2  mx-4 <?php echo(basename($_SERVER['PHP_SELF'])=="businesswebsite.php"?"active2":"")?>">Businnes Website</a>
-                                    </li>
-                                      <li class="menu relative text-right">
-                                        <a href="websitemaintance"  class="pb-2  mx-4 <?php echo(basename($_SERVER['PHP_SELF'])=="websitemaintance.php"?"active2":"")?>">Website Maintenance?</a>
-                                    </li>
-                                     <li class="menu relative text-right">
-                                        <a href="coding_and_technology"  class="pb-2  mx-4 <?php echo(basename($_SERVER['PHP_SELF'])=="coding_and_technology.php"?"active2":"")?>">Coding & Technology</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                </li>
+              
            
-           <!--<li class="menu relative "><a href="PlansandPricing.php"  class="py-2 mx-4 <?php echo(basename($_SERVER['PHP_SELF'])=="PlansandPricing.php"?"active2":"")?>">Plans and Pricing</a>-->
-            <!--</li>-->
-            <li class=" menu relative  "><a href="theme"  class="py-4 mx-4 <?php echo(basename($_SERVER['PHP_SELF'])=="theme.php"?"active2":"")?>">Design Theme</i></a>
+         
+            <li class="btn menu "><a href="#theme"  class=" py-4 mx-4">Design Theme</i></a>
              </li>
      
-            <li class="menu relative "><a href="contactus"  class="py-4 mx-4 <?php echo(basename($_SERVER['PHP_SELF'])=="contactus.php"?"active2":"")?>">Contact Us</a></li>
-            <li class="menu relative "><a href="faqs"  class="py-4 mx-4 <?php echo(basename($_SERVER['PHP_SELF'])=="faqs.php"?"active2":"")?>">Faq's</a></li>
+            <li class="btn menu"><a href="#contact_us"  class=" py-4 mx-4 ">Contact Us</a></li>
+            <li class="btn menu  "><a href="faqs"  class=" py-4 mx-4">Faq's</a></li>
         </ul>
         </div>
         <div class="hover:bg-red-600 px-6 py-1.5 lg:block hidden relative border-double border-4 border-white">
-            <a href="contactus" class="text-white font-semibold "> <button class=" ">Talk To Us</button></a>
+            <a href="contactus" class=" text-white font-semibold "> <button class=" ">Talk To Us</button></a>
             <!-- class="blogbtn" -->
         </div>
        
@@ -363,5 +335,7 @@ function myhumberFunction(x) {
             $(".recent").toggleClass("fa-plus fa-minus");
         });
 </script>
+
+
 </body>
 </html>
