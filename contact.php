@@ -13,7 +13,6 @@ $alternateName='Contact Us - Get the hassle-free IT solutions - Oriflamme';
  ?>
 
 <?php
-
     $insert = false;
     $host = "localhost";
     $user = "root";
@@ -77,14 +76,13 @@ $alternateName='Contact Us - Get the hassle-free IT solutions - Oriflamme';
                 }
             } 
 
-            $sql = "INSERT INTO contact_us(name, email, service, contact, massage)
-            VALUES ('" . $_REQUEST['name'] . "','" . $_REQUEST['email'] . "','" . $_REQUEST['subject'] . "','" . $_REQUEST['contact'] . "','" . $_REQUEST['massage'] . "')";
+            $sql = "INSERT INTO contact_us(name, email, service, contact, massage) VALUES ('" . $_REQUEST['name'] . "','" . $_REQUEST['email'] . "','" .$_REQUEST['service'] . "','" . $_REQUEST['contact'] . "','" . $_REQUEST['massage'] . "')";
     
             if ($ctr==0 && $conn->query($sql) === TRUE) {
                 // echo "Record Submitted Successfully";
                 $insert = true;
             } else {
-                // echo "Error:" . $sql . "<br>" . $conn->error;
+                echo "Error:" . $sql . "<br>" . $conn->error;
             }
 
         }
@@ -135,7 +133,7 @@ $alternateName='Contact Us - Get the hassle-free IT solutions - Oriflamme';
                 </div>
                 <div>
                     <label for="" class="text-sm">Required Services</label>
-                    <input type="text" name="subject" id="" placeholder="Your subject here" class="w-full my-1 text-xs py-2 px-2 border-2 border-sky-950   dark:bg-gray-700 dark:border-sky-950 dark:placeholder-gray-400 dark:text-white focus:outline-none focus:ring-2 focus:ring-sky-950 focus:border-transparent">
+                    <input type="text" name="service" id="" placeholder="Your subject here" class="w-full my-1 text-xs py-2 px-2 border-2 border-sky-950   dark:bg-gray-700 dark:border-sky-950 dark:placeholder-gray-400 dark:text-white focus:outline-none focus:ring-2 focus:ring-sky-950 focus:border-transparent">
                 </div>
                
                 <div>

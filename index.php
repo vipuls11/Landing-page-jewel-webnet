@@ -28,6 +28,7 @@
         </div>
     </div>
 </div>
+
 <div class="w-full">
     <div id="services" class="drop-shadow-2xl border bg-no-repeat bg-[url('img/developer.png')] bg-contain bg-cover w-full">
 
@@ -101,7 +102,74 @@
         </div>
     </div>
 </div>
-<div id="theme" class="bg-[#082366]">
+<div id="theme" class="w-[95%] mx-auto py-10 px-4">
+<div>
+           <h3 class="text-4xl lg:w-5/12 font-semibold">A new site for your
+                agency? It’s here.</h3>
+           <h5 class="text-xl  my-8">Great selection of complete & flexible agency demos.</h5>
+           <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-10 ">
+               
+                    <div data-aos="zoom-in" class="slidupeanimate card hover:drop-shadow-xl border overflow-hidden bg-white">
+                        <a target="_blank" href="http://theme1.jewelwebnet.com/">
+                            <div class=" p-4  relative">
+                                <img src="img/website1.webp" alt="" class="bg-coverw-full h-full hover:scale-110 transition duration-700 ease-in-out">
+                               <div class="absolute top-0 cursor-pointer  left-4 bg-red-600 text-white px-6 py-2 hover:bg-[#082366] text-sm"><h4>Live Preview</h4></div>
+                            </div>
+                         </a>
+                    </div>
+                   
+                    
+                    <div data-aos="zoom-in" class="slidupeanimate card hover:drop-shadow-xl border overflow-hidden bg-white">
+                        <a target="_blank" href="http://theme2.jewelwebnet.com/">
+                            <div class="p-4 relative">
+                            <img src="img/website2.webp" alt="" class="bg-cover w-full h-full hover:scale-110 transition duration-700 ease-in-out">
+                            <div class="absolute top-0 cursor-pointer  left-4 bg-red-600 text-white px-6 py-2 hover:bg-[#082366] text-sm"><h4>Live Preview</h4></div>
+                            </div>
+                        </a>
+                    </div>
+                   
+            
+                    <div data-aos="zoom-in" class="slidupeanimate  card hover:drop-shadow-xl border overflow-hidden bg-white">
+                        <a target="_blank" href="http://theme3.jewelwebnet.com/">
+                        <div class="p-4 relative">
+                            <img src="img/website3.webp" alt="" class="bg-cover w-full h-full hover:scale-110 transition duration-700 ease-in-out">
+                           <div class="absolute cursor-pointer top-0 left-4 bg-red-600 text-white px-6 py-2 hover:bg-[#082366] text-sm"><h4>Live Preview</h4></div>
+                        </div>
+                        </a>
+                    </div>
+            
+                    <div data-aos="zoom-in" class="slidupeanimate  card hover:drop-shadow-xl border overflow-hidden bg-white">
+                         <a target="_blank" href="http://theme4.jewelwebnet.com/">
+                            <div class="p-4 relative">
+                                <img src="img/theme1.webp" alt="" class="bg-cover w-full h-full hover:scale-110 transition duration-700 ease-in-out">
+                                <div class="absolute cursor-pointer top-0 left-4 bg-red-600 text-white px-6 py-2 hover:bg-[#082366] text-sm"><h4>Live Preview</h4></div>
+                            </div>
+                        </a>
+                    </div>
+            
+                    <div data-aos="zoom-in" class="slidupeanimate  card hover:drop-shadow-xl border overflow-hidden bg-white">
+                        <a target="_blank" href="http://theme5.jewelwebnet.com/">
+                            <div class="p-4 relative">
+                                <img src="img/theme2.webp" alt="" class="bg-cover w-full h-full hover:scale-110 transition duration-700 ease-in-out">
+                                <div class="absolute cursor-pointer top-0 left-4 bg-red-600 text-white px-6 py-2 hover:bg-[#082366] text-sm"><h4>Live Preview</h4></div>
+                            </div>
+                        </a>
+                    </div>
+            
+                    <div data-aos="zoom-in" class="slidupeanimate  card hover:drop-shadow-xl border overflow-hidden bg-white">
+                        <a target="_blank" href="http://theme6.jewelwebnet.com/">
+                            <div class="p-4 relative">
+                                <img src="img/theme3.webp" alt="" class="bg-cover w-full h-full hover:scale-110 transition duration-700 ease-in-out">
+                                <div class="absolute cursor-pointer top-0 left-4 bg-red-600 text-white px-6 py-2 hover:bg-[#082366] text-sm"><h4>Live Preview</h4></div>
+                            </div>
+                        </a>
+                    </div>
+            </div>
+            </div>  
+           </div>
+
+
+<div  class="bg-[#082366]">
     <div class="grid lg:grid-cols-2 gap-x-5 w-[95%] mx-auto text-white py-10 px-4">
         <div class="grid content-center">
             <h3 class="text-5xl font-extrabold ">Responsive And Seo Friendly Website Development</h3>
