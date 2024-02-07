@@ -82,7 +82,7 @@ $alternateName='Contact Us - Get the hassle-free IT solutions - Oriflamme';
                 // echo "Record Submitted Successfully";
                 $insert = true;
             } else {
-                echo "Error:" . $sql . "<br>" . $conn->error;
+                // echo "Error:" . $sql . "<br>" . $conn->error;
             }
 
         }
@@ -120,9 +120,9 @@ $alternateName='Contact Us - Get the hassle-free IT solutions - Oriflamme';
 
      <!-- ..............................contactus.................... -->
     <div class="grid justify-items-end">
-            <div class="m-5 p-5 bg-gray-100">
+            <div class="m-5 px-5 py-2">
                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">       
-                <div class="lg:grid lg:grid-cols-2 gap-5">
+                <div class="lg:grid lg:grid-cols-2 gap-5 text-white">
                 <div class="w-full" >
                       <label for="" class="text-sm">Your Name<span class="text-red-600 ">*</span><span class="text-red-600 text-xs error"><?php echo "<br>"."\n".$nameErr; ?></span></label>
                     <input type="text" name="name" id="" placeholder="Your name here" class="w-full my-1 text-xs py-2 px-2 border-2 border-sky-950  dark:bg-gray-700 dark:border-sky-950 dark:placeholder-gray-400 dark:text-white focus:outline-none focus:ring-2 focus:ring-sky-950focus:border-transparent">
@@ -141,11 +141,12 @@ $alternateName='Contact Us - Get the hassle-free IT solutions - Oriflamme';
                     <input type="number" name="contact" id="" placeholder="Your phone number here" class="w-full my-1 text-xs py-2 px-2 border-2 border-sky-950   dark:bg-gray-700 dark:border-sky-950 dark:placeholder-gray-400 dark:text-white focus:outline-none focus:ring-2 focus:ring-sky-950 focus:border-transparent">
                 </div>
             </div>
-            <div class="my-2">
+            <div class="my-2 text-white">
                 <label for="" class="text-sm">Massages</label>
                 <textarea type="text" name="massage" id="" cols="115" rows="3" placeholder="Tell us few words" class="w-full my-1 px-2 pt-2.5 text-xs border-2 border-sky-950   dark:bg-gray-700 dark:border-sky-950 dark:placeholder-gray-400 dark:text-white focus:outline-none focus:ring-2 focus:ring-sky-950 focus:border-transparent"></textarea>
                 </div>
-                <div><button class="bg-sky-950 w-full px-4 py-2 font-semibold uppercase text-sm text-white border-double  border-8 border-white">send Message</button>
+                <div><button class="bg-sky-950 w-full px-4 py-2 font-semibold uppercase text-sm text-white border-double  border-8 border-white" style="text-shadow: 1px 3px 0 #969696, 1px 3px 3px;
+            -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);">send Message</button>
             </div>
             </form>
         </div>

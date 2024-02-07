@@ -265,7 +265,7 @@
         </div>
         <div id="nav-menu">
             <ul id="myDIV" class="nav flex text-lg menu-item font-base text-white">
-           <li class="btn menu "><a href="#introduction"  class=" active py-4 mx-4">About Us</a></li>
+           <li class="btn menu "><a href="#about-us"  class=" active py-4 mx-4">About Us</a></li>
          
            <li class="btn menu lg:block hidden "><a href="#services" class=" py-4 mx-4">Services</a>
                 

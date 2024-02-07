@@ -161,8 +161,6 @@ $db_name = "landing_page";
                     <a href="https://in.pinterest.com/jewelwebnetco/" class="mx-2 text-2xl font-semibold hover:text-blue-700"><i class="fab fa-pinterest"></i></a>
                     <a href="https://www.google.com/search?q=Jewel+Webnet&stick=H4sIAAAAAAAA_-NgU1I1qDBJTDE1NzO1TDM1MzI0N06zMqhIM001Nrc0M09KNDVMMjUyXsTK45VanpqjEJ6alJdaAgCCJKUTOAAAAA&hl=en&mat=Cc9ukYr_A05wElYBl7_Ll2D1MouGJBuhiR0MyV0PGYBksBbnRw7H7cScPqEgWFcFIO1v8lWm71C83ROI3ssAcrHpflYW1QUFhpFTw5-IU2vnWkeKTUyLp7zzUmFwWC0DAw&authuser=0&bshm=rime/1#ip=1" class="mx-2 text-2xl font-semibold hover:text-blue-700"><i class="fa-brands fa-google-plus-g"></i></a>
                 </div>
-        
-        <div><a href="blog" class="text-white">Blog</a></div>
         </div>
     
         <div class="cursor-pointer">
