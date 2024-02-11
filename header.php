@@ -9,13 +9,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Comfortaa&family=Dancing+Script:wght@500&family=Edu+NSW+ACT+Foundation&family=Montserrat:ital,wght@1,300;1,400&family=Noto+Sans+Zanabazar+Square&family=Noto+Sans:wght@500&family=Nunito+Sans&family=Open+Sans&family=Pacifico&family=Poppins:ital@0;1&family=Raleway:ital@0;1&family=Roboto&family=Shantell+Sans:ital@1&family=Source+Sans+Pro&family=Zeyada&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" type="image/x-icon" href="img/icon images/facicon-removebg-preview.png" width="">
+    <link rel="icon" type="image/x-icon" href="img/facicon-removebg-preview.png" width="">
         <!-- ----------jquery--------- -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"
             integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
             crossorigin="anonymous"></script>
 
-    <title><?php echo $title; ?></title>
+    <title><?php 
+    // echo $title; 
+    ?>
+    Landing Page</title>
     <meta name="description" content="<?php echo $description; ?>"/>
     <meta name="keywords" content="<?php echo $keywords; ?>"/>
     <link href="<?php echo $canonical; ?>" rel="canonical"/>
@@ -258,10 +261,10 @@
     <div id="navbar" class="nav-color fixed w-full top-0 bg-[#082366] z-50">
     <nav class="relative flex text-gray-300 justify-between items-center py-1 " >
         <div class="hidden lg:block">
-            <a href="./"><img src="img/jewelwebnet-logo.png" alt="" width="350px"></a>
+            <a href="https://www.jewelwebnet.com/" target="_blank"><img src="img/jewelwebnet-logo.png" alt="" width="350px"></a>
         </div>
         <div class="block lg:hidden">
-            <a href="./"><img src="img/jewelwebnet-logo.png" alt="" width="150px"></a>
+            <a href="https://www.jewelwebnet.com/" target="_blank"><img src="img/jewelwebnet-logo.png" alt="" width="150px"></a>
         </div>
         <div id="nav-menu">
             <ul id="myDIV" class="nav flex text-lg menu-item font-base text-white">
@@ -277,11 +280,11 @@
              </li>
      
             <li class="btn menu"><a href="#contact_us"  class=" py-4 mx-4 ">Contact Us</a></li>
-            <li class="btn menu  "><a href="faqs"  class=" py-4 mx-4">Faq's</a></li>
+            <!-- <li class="btn menu  "><a href="faqs"  class=" py-4 mx-4">Faq's</a></li> -->
         </ul>
         </div>
         <div class="hover:bg-red-600 px-6 py-1.5 lg:block hidden relative border-double border-4 border-white">
-            <a href="contactus" class=" text-white font-semibold "> <button class=" ">Talk To Us</button></a>
+            <a href="#contact_us" class=" text-white font-semibold "> <button class=" ">Talk To Us</button></a>
             <!-- class="blogbtn" -->
         </div>
        

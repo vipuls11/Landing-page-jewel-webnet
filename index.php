@@ -1,6 +1,6 @@
 <?php include('header.php') ?>
-<div class="lg:pt-24 md:pt-10 bg-gray-100">
-    <div id="contact_us" class="lg:w-[90%] w-[95%] m-auto bg-gray-100  pt-14 pb-10">
+<div id="contact_us" class="lg:pt-24 md:pt-10 bg-gray-100">
+    <div  class="lg:w-[90%] w-[95%] m-auto bg-gray-100  pt-14 pb-10">
         <!-- <h3 class="flex  items-center place-content-center py-5 text-black text-4xl text-center uppercase font-semibold">
             <span class="mr-3"><img src="img/contact-us.png" alt="" class="w-12 h-12"></span>
             Contact Us
@@ -24,8 +24,8 @@ box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15p
         </div>
     </div>
 </div>
-<div class="lg:relative">
-    <section id="introduction" class=" bg-[#082366] text-center  ">
+<div class="lg:relative" id="introduction">
+    <section  class=" bg-[#082366] text-center  ">
         <div class="lg:h-80 px-4 lg:w-[90%] w-[95%] m-auto  pb-5 pt-10">
             <h2 class="uppercase text-5xl font-extrabold text-white pb-4 ">Introducing website and app Development services</h2>
             <h5 class="text-3xl text-white">Specialize in the e-commerce jewelery business.</h5>
@@ -54,8 +54,8 @@ box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15p
         </div>
     </div>
 </div>
-<div class="w-full">
-    <div id="services" class="drop-shadow-2xl border bg-no-repeat bg-[url('img/developer.png')] bg-contain bg-cover w-full">
+<div class="w-full" id="services">
+    <div  class="drop-shadow-2xl border bg-no-repeat bg-[url('img/developer.png')] bg-contain bg-cover w-full">
 
         <h3 class="flex  items-center place-content-center lg:pt-40 lg:mt-0 mt-5 text-white text-4xl text-center uppercase font-semibold">
             <span class="mr-3"><img src="img/feature.png" alt="" class="w-12 h-12"></span>
@@ -258,6 +258,7 @@ box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15p
 </div>
 
 <div class="py-10 text-[#082366] bg-gray-100">
+    <div class="lg:w-[100%] w-[95%] m-auto">
     <div class="text-center mb-5">
         <h4 class="text-4xl font-extrabold ">
             Our Happy Clients
@@ -265,60 +266,61 @@ box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15p
     </div>
     <div class="sm:block hidden">
         <div class="grid lg:md:grid-cols-7 gap-5 mt-5 ">
-            <div class="lg:w-52 lg:mx-5 lg:m-auto">
+            <div class="">
                 <div class="w-36 h-36"><img src="img/oriflamme_it-solutions.png" alt="" class=" "></div>
             </div>
-            <div class="lg:w-52 lg:mx-5 lg:m-auto">
+            <div class="">
                 <div class="w-36 h-36"><img src="img/Vinix fashions.png" alt="" class=""></div>
             </div>
-            <div class="lg:w-52 lg:mx-5 lg:m-auto">
+            <div class="">
                 <div class="w-36 h-36 "><img src="img/lumely.png" alt="" class=""></div>
             </div>
-            <div class="lg:w-52 lg:mx-5 lg:m-auto">
+            <div class="">
                 <div class="w-36 h-36 "><img src="img/grace jewels.png" alt="" class=""></div>
             </div>
-            <div class="lg:w-52 lg:mx-5 lg:m-auto">
+            <div class="">
                 <div class="w-36 h-36 "><img src="img/trezza.png" alt="" class=""></div>
             </div>
-            <div class="lg:w-52 lg:mx-5 lg:m-auto">
+            <div class="">
                 <div class="w-36 h-36 "><img src="img/tarini jewels.png" alt="" class=""></div>
             </div>
-            <div class="lg:w-52 lg:mx-5 lg:m-auto">
+            <div class="">
                 <div class="w-36 h-36 "><img src="img/a1employmen.png" alt="" class=""></div>
             </div>
 
         </div>
     </div>
     <div class="block lg:hidden">
-        <div class="grid grid-cols-3 gap-5 mt-5 place-content-center px-4">
-            <div class="w-52  m-auto">
+        <div class="grid grid-cols-2 gap-5 mt-5 place-content-center px-4">
+            <div class="">
                 <div class="w-36 h-36"><img src="img/oriflamme_it-solutions.png" alt="" class=" "></div>
             </div>
-            <div class="w-52  m-auto">
+            <div class="">
                 <div class="w-36 h-36"><img src="img/Vinix fashions.png" alt="" class=""></div>
             </div>
-            <div class="w-52 m-auto">
+            <div class="">
                 <div class="w-36 h-36 "><img src="img/lumely.png" alt="" class=""></div>
             </div>
-            <div class="w-52 m-auto">
+            <div class="">
                 <div class="w-36 h-36 "><img src="img/grace jewels.png" alt="" class=""></div>
             </div>
-            <div class="w-52  m-auto">
+            <div class="">
                 <div class="w-36 h-36 "><img src="img/trezza.png" alt="" class=""></div>
             </div>
-            <div class="w-52  m-auto">
+            <div class="">
                 <div class="w-36 h-36 "><img src="img/tarini jewels.png" alt="" class=""></div>
             </div>
-            <div class="w-52 m-auto">
+            <div class="">
                 <div class="w-36 h-36 "><img src="img/a1employmen.png" alt="" class=""></div>
             </div>
-            <div class="w-52 m-auto place-self-center">
+            <div class="place-self-center">
                 <div class="w-36 h-36 "><img src="img/1-removebg-preview.png" alt="" class=""></div>
             </div>
-            <div class="w-52 m-auto">
+            <div class="">
                 <div class="w-36 h-36 "><img src="img/shreeraj-removebg-preview.png" alt="" class=""></div>
             </div>
         </div>
+    </div>
     </div>
 </div>
 

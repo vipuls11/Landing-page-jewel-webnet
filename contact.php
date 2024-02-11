@@ -14,10 +14,10 @@ $alternateName='Contact Us - Get the hassle-free IT solutions - Oriflamme';
 
 <?php
     $insert = false;
-    $host = "localhost";
-    $user = "root";
-    $password ="";
-    $db_name ="landing_page";
+    $host = 'localhost';
+    $user = 'root';
+    $password ='';
+    $db_name ='landing_page';
   
     
    
@@ -125,25 +125,25 @@ $alternateName='Contact Us - Get the hassle-free IT solutions - Oriflamme';
                 <div class="lg:grid lg:grid-cols-2 gap-5 text-white">
                 <div class="w-full" >
                       <label for="" class="text-sm">Your Name<span class="text-red-600 ">*</span><span class="text-red-600 text-xs error"><?php echo "<br>"."\n".$nameErr; ?></span></label>
-                    <input type="text" name="name" id="" placeholder="Your name here" class="w-full my-1 text-xs py-2 px-2 border-2 border-sky-950  dark:bg-gray-700 dark:border-sky-950 dark:placeholder-gray-400 dark:text-white focus:outline-none focus:ring-2 focus:ring-sky-950focus:border-transparent">
+                    <input type="text" name="name" id="" placeholder="Your name here" class="w-full my-1 text-xs py-2 px-2 border-2 border-sky-950  dark:bg-gray-700 dark:border-sky-950 dark:placeholder-gray-400 dark:text-white">
                 </div>
                 <div>
                     <label for="" class="text-sm">Your Email<span class="text-red-600 error">*</span><span class="text-red-600 text-xs error"><?php echo "<br>"."\n".$emailErr; ?></span></label>
-                    <input type="email" name="email" id="" placeholder="Your email here" class="w-full my-1 text-xs py-2 px-2 border-2 border-sky-950   dark:bg-gray-700 dark:border-sky-950 dark:placeholder-gray-400 dark:text-white focus:outline-none focus:ring-2 focus:ring-sky-950 focus:border-transparent" >
+                    <input type="email" name="email" id="" placeholder="Your email here" class="w-full my-1 text-xs py-2 px-2 border-2 border-sky-950   dark:bg-gray-700 dark:border-sky-950 dark:placeholder-gray-400 dark:text-white" >
                 </div>
                 <div>
                     <label for="" class="text-sm">Required Services</label>
-                    <input type="text" name="service" id="" placeholder="Your subject here" class="w-full my-1 text-xs py-2 px-2 border-2 border-sky-950   dark:bg-gray-700 dark:border-sky-950 dark:placeholder-gray-400 dark:text-white focus:outline-none focus:ring-2 focus:ring-sky-950 focus:border-transparent">
+                    <input type="text" name="service" id="" placeholder="Your subject here" class="w-full my-1 text-xs py-2 px-2 border-2 border-sky-950   dark:bg-gray-700 dark:border-sky-950 dark:placeholder-gray-400 dark:text-white">
                 </div>
                
                 <div>
                     <label for="" class="text-sm">Contact Number<span class="text-red-600 error">*</span><span class="text-red-600 text-xs error"> <?php echo "<br>"."\n".$mobilenoErr; ?></span></label>
-                    <input type="number" name="contact" id="" placeholder="Your phone number here" class="w-full my-1 text-xs py-2 px-2 border-2 border-sky-950   dark:bg-gray-700 dark:border-sky-950 dark:placeholder-gray-400 dark:text-white focus:outline-none focus:ring-2 focus:ring-sky-950 focus:border-transparent">
+                    <input type="number" name="contact" id="" placeholder="Your phone number here" class="w-full my-1 text-xs py-2 px-2 border-2 border-sky-950   dark:bg-gray-700 dark:border-sky-950 dark:placeholder-gray-400 dark:text-white">
                 </div>
             </div>
             <div class="my-2 text-white">
                 <label for="" class="text-sm">Massages</label>
-                <textarea type="text" name="massage" id="" cols="115" rows="3" placeholder="Tell us few words" class="w-full my-1 px-2 pt-2.5 text-xs border-2 border-sky-950   dark:bg-gray-700 dark:border-sky-950 dark:placeholder-gray-400 dark:text-white focus:outline-none focus:ring-2 focus:ring-sky-950 focus:border-transparent"></textarea>
+                <textarea type="text" name="massage" id="" cols="115" rows="3" placeholder="Tell us few words" class="w-full my-1 px-2 pt-2.5 text-xs border-2 border-sky-950 text-black dark:bg-gray-700 dark:border-sky-950 dark:placeholder-gray-400 dark:text-black"></textarea>
                 </div>
                 <div><button class="bg-sky-950 w-full px-4 py-2 font-semibold uppercase text-sm text-white border-double  border-8 border-white" style="text-shadow: 1px 3px 0 #969696, 1px 3px 3px;
             -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);">send Message</button>

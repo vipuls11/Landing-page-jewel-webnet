@@ -22,12 +22,12 @@ body{
        <?php
      $validation=false;
     $insert = false;
-    $host = "localhost";
-$user = "root";
+    $host = 'localhost';
+$user = 'root';
 $password = '';
-$db_name = "landing_page";
+$db_name = 'landing_page';
   
- $conn = mysqli_connect($host, $user, $password, $db_name);   
+ $conn1 = mysqli_connect($host, $user, $password, $db_name);   
   
     if(mysqli_connect_errno()){
         die("Failed to connect with MySQL:". mysqli_connect_errno());   
@@ -37,11 +37,11 @@ $db_name = "landing_page";
         $email = "";
         $ctr=0;  
         
-        function checkEmail($conn, $emailInput){
+        function checkEmail($conn1, $emailInput){
        
             $query = "SELECT email FROM subscribers WHERE email='$emailInput'";
             
-            $result = $conn->query($query);
+            $result = $conn1->query($query);
             if ($result->num_rows > 0) {
              return true;
             }
@@ -51,22 +51,22 @@ $db_name = "landing_page";
   
         if(isset($_POST['email']) ){
         $emailInput= $_REQUEST['email'];
-        if (checkEmail($conn, $emailInput)) {
+        if (checkEmail($conn1, $emailInput)) {
             $validation = true;
             // echo "<span style='color:red'>This Email is already in use</span>";
         }
         else
         {
-        $sql ="INSERT INTO subscribers(email)
-        VALUES ('".$_REQUEST['email']."')";
+        // $sql ="INSERT INTO subscribers(email)
+        // VALUES ('".$_REQUEST['email']."')";
 
-        if($conn->query($sql)=== TRUE){
-            // echo "Record Submitted Successfully";
-            $insert = true;
-        }
-        else{
-            echo "Error:".$sql. "<br>" .$conn->error;
-        }
+        // if($conn->query($sql)=== TRUE){
+        //     // echo "Record Submitted Successfully";
+        //     $insert = true;
+        // }
+        // else{
+        //     echo "Error:".$sql. "<br>" .$conn->error;
+        // }
 
         // Email Validation   
         if (empty($_POST["email"])) {
@@ -90,7 +90,7 @@ $db_name = "landing_page";
         $sql = "INSERT INTO subscribers( email)
         VALUES ('" . $_REQUEST['email'] . "')";
 
-        if ($ctr==0 && $conn->query($sql) === TRUE) {
+        if ($ctr==0 && $conn1->query($sql) === TRUE) {
             // echo "Record Submitted Successfully";
             $insert = true;
         } else 
@@ -98,7 +98,7 @@ $db_name = "landing_page";
             // echo "Error:" . $sql . "<br>" . $conn->error;
         }
     } 
-        $conn->close();
+        $conn1->close();
 
         // header("location:Contact.php ?");
     }
@@ -181,14 +181,14 @@ $db_name = "landing_page";
             <div class="py-10">
             <p class="  text-white">Subscribe to our newsletter to receive updates on the latest news!</p>
             <div class="my-10">         
-            <form  action="" method="POST">   
+            <form  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">   
                 <!--<label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>-->
                 <div class="relative">
                     <!--<div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">-->
                         
                     <!--</div>-->
-                    <input name="email" type="email" id="default-search" class="block w-full rounded-lg mx-auto p-2 pl-5 text-lg  text-gray-700 border border-gray-300  bg-gray-50  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Subscribe with us" required>
-                    <button class="text-gray-800 absolute right-0 top-2 text-3xl px-4 "><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+                    <input name="email" type="email" id="default-search" class="block w-full rounded-lg mx-auto p-2 pl-5 text-lg  text-gray-700 border border-gray-300  bg-gray-50  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Subscribe with us">
+                    <button class="text-gray-800 absolute right-0 top-2 text-3xl px-4" ><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
                 </div>
             </form>
                 <div class="">
